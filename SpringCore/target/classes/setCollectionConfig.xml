@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean
+		class="com.hrithik.SpringCore.DependencyInjectionCollection.Set.Country"
+		name="country">
+		<property name="countryCode" value="91" />
+		<property name="name" value="India" />
+		<property name="states">
+			<set>
+				<bean
+					class="com.hrithik.SpringCore.DependencyInjectionCollection.Set.States"
+					name="Maharastra">
+					<property name="stateId" value="5" />
+					<property name="name" value="Maharastra" />
+					<property name="population" value="8965745" />
+				</bean>
+				<bean
+					class="com.hrithik.SpringCore.DependencyInjectionCollection.Set.States"
+					name="Karnataka">
+					<property name="stateId" value="4" />
+					<property name="name" value="Karnataka" />
+					<property name="population" value="4965745" />
+				</bean>
+				<bean
+					class="com.hrithik.SpringCore.DependencyInjectionCollection.Set.States"
+					name="Tamil Nadu">
+					<property name="stateId" value="3" />
+					<property name="name" value="Tamil Nadu" />
+					<property name="population" value="6965745" />
+				</bean>
+			</set>
+		</property>
+	</bean>
+
+</beans>

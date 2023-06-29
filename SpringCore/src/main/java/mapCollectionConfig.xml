@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean
+		class="com.hrithik.SpringCore.DependencyInjectionCollection.Map.Address"
+		name="address">
+		<property name="id" value="1" />
+		<property name="addressMap">
+			<map>
+			<entry key="1" value="Pune"/>
+			<entry key="2" value="Bangalore"/>
+			<entry key="3" value="Noida"/>
+			<entry key="4" value="Hyderabad"/>
+			</map>
+		</property>
+	</bean>
+
+</beans>
